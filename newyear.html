@@ -13,7 +13,6 @@
       color: #eb0000;
       text-align: center;
       font-family: Arial, sans-serif;
-      /* margin: 20px; */
     }
     .image-container {
       position: relative;
@@ -65,6 +64,7 @@
     }
 
     .circle-wrapper {
+      margin-top: 20px;
       border: 11px solid #ff0000;
       border-radius: 100%;
       
@@ -175,6 +175,40 @@
     .image-darkened {
   filter: brightness(70%); 
 }
+.coming-soon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+  text-align: center;
+  padding: 20px; 
+}
+
+.left-texts,
+.right-texts {
+  flex: 2;
+}
+
+.left-texts {
+  text-align: left;
+}
+
+.right-texts {
+  text-align: right;
+}
+
+.demo-text {
+  padding: 10px;
+}
+
+.centered-image-wrapper,
+.circle-wrapper {
+  flex: 1;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
   </style>
@@ -211,7 +245,7 @@
   </style>
 
 <div class="image-container">
-  <img src="Vectorrr.png" alt="Another Image" class="main-image">
+  <img class="image-darkened" src="Vectorrr.png" alt="Another Image" class="main-image">
   <img src="Group 70.png" alt="Overlay Image" class="overlay-image">
   <div class="overlay-text">Welcome to<br> midnight party</div>
   <div class="overlay-text-small">And enjoy the new year in style</div>
@@ -229,20 +263,31 @@
 
 
   <div class="coming-soon-container">
-    <div class="demo-text" style="color: red;">NEW BEST OFFER</div>
-    <div class="demo-text" style="color: #000000;">Coming soon</div>
-    <div class="demo-text" style="color: gray;">Newer offers are on the way</div>
-
-    <div class="demo-text" style="color: red;">2024</div>
-    <div class="demo-text" style="color: gray;">Better offers for a new year</div>
-
-    <img src="Group 96.png" alt="Centered Image" class="centered-image">
-
-
-    <div class="circle-wrapper">
-      <img src="Ellipse 1.png" alt="Centered Image" class="centered-image">
+    <div class="left-texts">
+      <div class="demo-text" style="color: red;">NEW BEST OFFER</div>
+      <div class="demo-text" style="color: #000000;">Coming soon</div>
+      <div class="demo-text" style="color: gray;">Newer offers are on the way</div>
     </div>
+    <div class="centered-image-wrapper">
+      <div class="circle-wrapper">
+        <img src="Ellipse 1.png" alt="Centered Image" class="centered-image">
+      </div>
+    </div>
+    <div class="right-texts">
+      <div class="demo-text" style="color: red; text-align: right;">2024</div>
+      <div class="demo-text" style="color: gray; text-align: right;">Better offers for a new year</div>
+    </div>
+  
+   
+  
+    <img src="Group 96.png" alt="Centered Image" class="centered-image">
   </div>
+  
+  
+  
+
+
+  
 
 
 
