@@ -3,21 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Happy New Year</title>
+
   <style>
+
     body {
-      background-color: #ff0000; /* Red background */
-      color: #000000; /* Black text */
+      background-color: #ffffff;
+      color: #eb0000;
       text-align: center;
       font-family: Arial, sans-serif;
-      margin: 20px;
+      /* margin: 20px; */
     }
-
+    .image-container {
+      position: relative;
+      width: 100%;
+    }
     .container {
       border-radius: 10px;
-      background-color: #ffffff; /* White background for content */
-      padding: 20px;
+      background-color: #ffffff;
+      padding: 100px;
       margin-bottom: 20px;
+    }
+
+    .product_container img {
+      width: 30%;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .product_container img:hover {
+      transform: scale(1.1);
     }
 
     img {
@@ -26,70 +42,318 @@
       height: auto;
       margin-bottom: 10px;
     }
-
-    h1, h2, h3 {
-      color: #ff0000; /* Red text for headers */
-    }
-
     .newsletter {
-      background-color: #000000; /* Black background for newsletter */
-      color: #ffffff; /* White text for newsletter */
+      color: #000000;
       padding: 10px;
-      border-radius: 10px;
       margin-top: 20px;
+      margin-bottom: 20px;
     }
-
+    
     footer {
       margin-top: 20px;
-      background-color: #000000; /* Black background for footer */
-      color: #ffffff; /* White text for footer */
-      padding: 10px;
-      border-radius: 10px;
+      background-color: #000000;
+      color: #ffffff;
     }
+    
+    
+    .centered-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+
+    }
+
+    .circle-wrapper {
+      border: 11px solid #ff0000;
+      border-radius: 100%;
+      
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      transform: translate(0, -50%);
+      color: #ffffff;
+      text-align: left;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .overlay-text-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #ffffff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+    
+    .overlay-text-small {
+      position: absolute;
+      top: 65%;
+      left: 20%;
+      color: #ffffff; 
+      text-align: left;
+      font-size: 10px;
+    }
+
+    .overlay-button {
+  position: absolute;
+  top: 70%;
+  left: 40%; 
+  background-color: #ff0000; 
+  color: #ffffff; 
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+    .overlay-button2 {
+      position: absolute;
+      top: 70%;
+      left: 19%;
+      background-color: #00000000; 
+      color: #ffffff; 
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .overlay-button3 {
+    
+      background-color: red; 
+      color: #ffffff; 
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .overlay-image {
+      position: absolute;
+      top: 50%;
+      right: 10%;
+      transform: translate(0, -50%);
+      width: 25%;
+      height: auto;
+    }
+
+    .overlap-image2 {
+      position: absolute;
+    }
+
+    .image4 { 
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .image2 { 
+      top: 50px; 
+      left: 0;
+    }
+
+    .image3 { 
+      top: 50px; 
+      right: 0;
+    }
+
+    .image1 { 
+      top: 50px; 
+      right: 150px; 
+    }
+  
+    .image-darkened {
+  filter: brightness(70%); 
+}
+
+
   </style>
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>Happy New Year!</h1>
-    <img src="happy_new_year_image.jpg" alt="New Year Image">
-    <p>Wishing you a joyful and prosperous new year!</p>
+
+
+  <div class="image-container">
+    
+    <img src="Banner Image.png" alt="image-with-opacity" class="image-darkened">
+    <div class="overlay-text-center" style="top: 40%; font-size: 160%;">Happy New Year</div>
+    <div class="overlay-text-center" style="top: 50%; font-size: 300%;">New Year Party</div>
+    <div class="overlay-text-center" style="top: 60%; font-size: 300%;">Celebration</div>
   </div>
+
 
   <div class="container">
-    <p>May the coming year bring you happiness and success!</p>
-    <img src="small_new_year_image.jpg" alt="Small New Year Image">
+    <h1 style="font-size: 60px; color: #ff0000;">65% OFF</h1>
+    <p style="color: red;">OUR HOLIDAY DEALS ARE BETTER</p>
+    <h1 style="color: rgb(0, 0, 0);">ALL CATAGORIES</h1>
+
+    <img src="New Year Photo.png" alt="Small New Year Image">
+  </div>
+
+  <style>
+    .gradient-background {
+      padding-top: 20px;
+      border-radius: 10px;
+      height: 200px;
+      background: linear-gradient(180deg, rgba(247, 142, 142, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
+    }
+  </style>
+
+<div class="image-container">
+  <img src="Vectorrr.png" alt="Another Image" class="main-image">
+  <img src="Group 70.png" alt="Overlay Image" class="overlay-image">
+  <div class="overlay-text">Welcome to<br> midnight party</div>
+  <div class="overlay-text-small">And enjoy the new year in style</div>
+  <button type="button" class="overlay-button2">JOIN NOW</button>
+</div>
+
+  <div class="gradient-background">
+    <p><span style="color: rgb(0, 0, 0);">Place:</span> New Park Hotel</p>
+    <p><span style="color: rgb(0, 0, 0);">Date:</span> 31 December Night 2023</p>
+    <p><span style="color: rgb(0, 0, 0);">Time:</span> Evening 7.30 pm to 12.30 am</p>
+    <button class="overlay-button3" type="button" >Join Now</button>
+
+    
+  </div>
+
+
+  <div class="coming-soon-container">
+    <div class="demo-text" style="color: red;">NEW BEST OFFER</div>
+    <div class="demo-text" style="color: #000000;">Coming soon</div>
+    <div class="demo-text" style="color: gray;">Newer offers are on the way</div>
+
+    <div class="demo-text" style="color: red;">2024</div>
+    <div class="demo-text" style="color: gray;">Better offers for a new year</div>
+
+    <img src="Group 96.png" alt="Centered Image" class="centered-image">
+
+
+    <div class="circle-wrapper">
+      <img src="Ellipse 1.png" alt="Centered Image" class="centered-image">
+    </div>
+  </div>
+
+
+
+<!-- 50% discount part -->
+
+  <div class="container">
+
+    <P style="color: #353535;">What is functional</P>
+
+    <h1 style="font-size: 60px;"><span style="font-size: 60px; color: red;">HOLIDAY</span> SALE 50%</h1>
+
+    <P style="color: #353535;">Join us and enjoy amazing deals</P>
+
+    <img src="Rectangle 1.png" alt="Image 1" class="overlap-image image1">
+    <img src="Rectangle 2.png" alt="Image 2" class="overlap-image image2">
+    <img src="Group 75.png" alt="Image 3" class="overlap-image image3">
+    <img src="Group 44.png" alt="Image 4" class="overlap-image image4">
+
   </div>
 
   <div class="container">
-    <p>Celebrate the New Year with joy and laughter!</p>
-    <img src="another_image.jpg" alt="Another Image">
+    <p style="font-size: 24px; text-align: left; color: red;">THE BEST GIFTS</p>
+    <p style="font-size: 30px;text-align: left;">Our Awesome Portfolio</p>
+    <p style="font-size: 14px;text-align: left; color: #353535;">Here are some of the products for 2024!</p>
   </div>
 
-  <div class="container">
-    <p style="font-size: 24px;">Cheers to a fantastic year ahead!</p>
-    <p style="font-size: 18px;">Wishing you health, happiness, and prosperity.</p>
-    <p style="font-size: 14px;">Happy New Year 2024!</p>
+  <div class="product_container">
+    <img src="Rectangle 3.png" alt="Image 1">
+    <img src="Rectangle 4.png" alt="Image 2">
+    <img src="Rectangle 5.png" alt="Image 3">
+    <img src="Rectangle 6.png" alt="Image 1">
+    <img src="Rectangle 7.png" alt="Image 2">
+    <img src="Rectangle 8.png" alt="Image 3">
   </div>
 
-  <div class="container">
-    <img src="image1.jpg" alt="Image 1">
-    <img src="image2.jpg" alt="Image 2">
-    <img src="image3.jpg" alt="Image 3">
+  <div class="newsletter-container"
+    style="background-color: #FFD9E6; padding: 20px; border-radius: 10px; margin-top: 20px;">
+    <div class="newsletter">
+      <img src="Group 61.png" alt="Newsletter Image"
+        style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 10px;">
+      <h2 style="color: #000000;">Subscribe Newsletter</h2>
+      <P style="color: #9e9e9e;">Subscribe to stay connected</P>
+      <form style="display: flex; align-items: center; justify-content: center; margin-top: 10px;">
+        <input type="email" placeholder="user@mail.com" required
+          style="padding: 5px; margin-right: 5px; border-radius: 5px;">
+        <button type="submit" style="padding: 5px; border-radius: 5px;">Subscribe</button>
+      </form>
+    </div>
   </div>
 
-  <div class="newsletter">
-    <h2>Subscribe to Our Newsletter</h2>
-    <p>Stay updated with the latest news and events. Sign up for our newsletter!</p>
-    <form>
-      <input type="email" placeholder="Enter your email" required>
-      <button type="submit">Subscribe</button>
-    </form>
+  <div>
+
   </div>
 
-  <footer>
-    <p>&copy; 2024 Happy New Year</p>
+
+  <footer style="padding: 50px;  justify-content: space-between;">
+    <p style="text-align: left; margin: 0;"> 44, Big Building Roosevelt Street
+    <p style="text-align: left; margin: 0;">Beach Gardens Florida 33410 </p>
+
+
+    <p style="text-align: right; margin: 0;"> <img src="Call.png" alt="Company Logo"
+        style="width: 50px; height: 50px; margin-right: 10px;">
+      +00 123 584 124</p>
+
+
+    <p style="text-align: right; margin: 0;"> <img src="Website.png" alt="Company Logo"
+        style="width: 50px; height: 50px; margin-right: 10px;">www.website.com
+    </p>
+
   </footer>
 
+  <div class="div-with-line" style="padding: 20px; display: flex; justify-content: center; align-items: center; background-color: #000000;" >
+
+    <img src="Facebook.png" alt="Company Logo 1" style="margin: 0 10px;">
+    <img src="Instagram.png" alt="Company Logo 2" style="margin: 0 10px;">
+    <img src="Twitter.png" alt="Company Logo 3" style="margin: 0 10px;">
+    <img src="Linkedin.png" alt="Company Logo 4" style="margin: 0 10px;">
+
+  </div>
+
+  <style>
+
+    footer::after {
+      content: '';
+      display: block;
+      border-top: 1px solid #383838;
+      margin-top: 10px;
+    }
+
+    .div-with-line {
+  border-bottom: 1px solid #383838;
+  
+  margin-top: 10px;
+margin:auto
+}
+
+
+
+    
+  </style>
+
+
+  <div style="padding: 100px; display: flex; justify-content: space-between; background-color: #000000; color: white;">
+    <p style="text-align: left; margin: 0;"> 2017, All Rights Reserved</p>
+    <p style="text-align: right; margin: 0;">Unsubscribe</p>
+
+
+    
+  </div>
+
+
 </body>
+
 </html>
